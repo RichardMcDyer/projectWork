@@ -11,10 +11,11 @@
           <h2>All Shoes:</h2>
           <ul>
             <xsl:for-each select="/store/shoe">
-              <li><xsl:value-of select="brand"</li>
+              <li><xsl:value-of select="brand"/></li>
             </xsl:for-each>          
           </ul>
         
         </body>
       </html>
     </xsl:template>
+</xsl:transform>
