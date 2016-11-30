@@ -32,7 +32,7 @@
     <maxSize>10</maxSize>
   </shoe>
   <shoe>
-    <brand>adidas</brand>
+    <brand>Adidas</brand>
     <name>adidas Yezzy boost 350</name>
     <price>350</price>
     <type>trainer</type>
@@ -42,7 +42,7 @@
     <maxSize>12</maxSize>
   </shoe>
   <shoe>
-    <brand>adidas</brand>
+    <brand>Adidas</brand>
     <name>adidas Gazelle</name>
     <price>70</price>
     <type>casual</type>
@@ -92,7 +92,7 @@
     <maxSize>10</maxSize>
   </shoe>
   <shoe>
-    <brand>converse</brand>
+    <brand>Converse</brand>
     <name>All Stars oxford</name>
     <price>50</price>
     <type>casual</type>
@@ -102,7 +102,7 @@
     <maxSize>10</maxSize>
   </shoe>
   <shoe>
-    <brand>reebok</brand>
+    <brand>Reebok</brand>
     <name>Classic Nylon</name>
     <price>60</price>
     <type>trainers</type>
@@ -112,7 +112,7 @@
     <maxSize>12</maxSize>
   </shoe>
   <shoe>
-    <brand>reebok</brand>
+    <brand>Reebok</brand>
     <name>Crossfit Nano 6.0</name>
     <price>110</price>
     <type>trainers</type>
@@ -122,7 +122,7 @@
     <maxSize>12</maxSize>
   </shoe>
   <shoe>
-    <brand>asics</brand>
+    <brand>Asics</brand>
     <name>GEL-Kayano Evo</name>
     <price>85</price>
     <type>trainers</type>
@@ -132,7 +132,7 @@
     <maxSize>12</maxSize>
   </shoe>
   <shoe>
-    <brand>nike</brand>
+    <brand>Nike</brand>
     <name>Free Free TR 6 Spectrum Women's</name>
     <price>110</price>
     <type>trainers</type>
@@ -142,7 +142,7 @@
     <maxSize>10</maxSize>
   </shoe>
   <shoe>
-    <brand>new balance</brand>
+    <brand>New Balance</brand>
     <name>373 Women's</name>
     <price>70</price>
     <type>trainers</type>
@@ -152,7 +152,7 @@
     <maxSize>10</maxSize>
   </shoe>
   <shoe>
-    <brand>nike</brand>
+    <brand>Nike</brand>
     <name>Floodlight Mercurial Victory VI FG</name>
     <price>75</price>
     <type>football boot</type>
@@ -162,7 +162,7 @@
     <maxSize>12</maxSize>
   </shoe>
   <shoe>
-    <brand>adidas</brand>
+    <brand>Adidas</brand>
     <name>preditors</name>
     <price>50</price>
     <type>football boot</type>
@@ -172,7 +172,7 @@
     <maxSize>12</maxSize>
   </shoe>
   <shoe>
-    <brand>nike</brand>
+    <brand>Nike</brand>
     <name>Hypervenoms Phantoms</name>
     <price>80</price>
     <type>football boot</type>
