@@ -9,23 +9,32 @@
           <style type="text/css">
             body 
             {
+            margin: 0 auto;
             background-color:#ccff00;
+            height:900px;
+            width:1800px;
             }
             #wrapper
             {
             margin: 0 auto;
+            margin-top:50px;
             background-color:black;
-            height:800px;
-            width:800px;
+            height:850px;
+            width:1700px;
+            }
+            #leftCol
+            {
+            float:left;
             }
             h2
             {
+            margin-left:40px;
             text-align:center;
             color:white;
             }
             ul
             {
-            list-style-position: inside;
+            list-style:none;
             text-align:center;
             color:white;
             }
@@ -33,12 +42,14 @@
         </head>
         <body>
           <div id = "wrapper">
-            <h2>All Shoes:</h2>
-            <ul>
-              <xsl:for-each select="/store/shoe">
-                <li><xsl:value-of select="brand"/></li>
-              </xsl:for-each>          
-            </ul>
+            <div id = "leftCol">
+              <h2>All Shoes:</h2>
+              <ul>
+                <xsl:for-each select="/store/shoe">
+                  <li><xsl:value-of select="brand"/></li>
+                </xsl:for-each>          
+              </ul>
+            </div>
           </div>
         </body>
       </html>
