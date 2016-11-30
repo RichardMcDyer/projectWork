@@ -3,34 +3,56 @@
 <store>
   <shoe>
     <brand>Nike</brand>
-    <name>Nike Air Max 2017</name>
-    <price>170</price>
-    <type>trainer</type>
-    <colour>black</colour>
-    <gender id="m">male</gender>
-    <minSize>7</minSize>
-    <maxSize>12</maxSize>
+      <name>Nike Air Max 2017</name>
+      <price>170</price>
+      <type>trainer</type>
+      <colour>black</colour>
+      <gender id="m">male</gender>
+      <minSize>7</minSize>
+      <maxSize>12</maxSize>
+      
+      <name>Nike Air presto </name>
+      <price>110</price>
+      <type>trainer</type>
+      <colour>white</colour>
+      <gender id="m">male</gender>
+      <minSize>7</minSize>
+      <maxSize>12</maxSize>
+    
+      <name>nike hurarache</name>
+      <price>90</price>
+      <type>trainer</type>
+      <colour>gray</colour>
+      <gender id="f">female</gender>
+      <minSize>4</minSize>
+      <maxSize>10</maxSize>
+    
+      <name>Free Free TR 6 Spectrum Women's</name>
+      <price>110</price>
+      <type>trainers</type>
+      <colour>blue</colour>
+      <gender id = "f">female</gender>
+      <minSize>4</minSize>
+      <maxSize>10</maxSize>
+    
+      <name>Floodlight Mercurial Victory VI FG</name>
+      <price>75</price>
+      <type>football boot</type>
+      <colour>purple</colour>
+      <gender id = "m">male</gender>
+      <minSize>7</minSize>
+      <maxSize>12</maxSize>
+    
+      <brand>Nike</brand>
+      <name>Hypervenoms Phantoms</name>
+      <price>80</price>
+      <type>football boot</type>
+      <colour>red</colour>
+      <gender id = "m">male</gender>
+      <minSize>7</minSize>
+      <maxSize>12</maxSize>
   </shoe>
-  <shoe>
-    <brand>Nike</brand>
-    <name>Nike Air presto </name>
-    <price>110</price>
-    <type>trainer</type>
-    <colour>white</colour>
-    <gender id="m">male</gender>
-    <minSize>7</minSize>
-    <maxSize>12</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Nike</brand>
-    <name>nike hurarache</name>
-    <price>90</price>
-    <type>trainer</type>
-    <colour>gray</colour>
-    <gender id="f">female</gender>
-    <minSize>4</minSize>
-    <maxSize>10</maxSize>
-  </shoe>
+  
   <shoe>
     <brand>Adidas</brand>
     <name>adidas Yezzy boost 350</name>
@@ -40,9 +62,7 @@
     <gender id="m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Adidas</brand>
+    
     <name>adidas Gazelle</name>
     <price>70</price>
     <type>casual</type>
@@ -50,7 +70,24 @@
     <gender id="m"></gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
+    
+    <name>superstars</name>
+    <price>99</price>
+    <type>trainer</type>
+    <colour>white</colour>
+    <gender id = "f">female</gender>
+    <minSize>4</minSize>
+    <maxSize>10</maxSize>
+    
+    <name>preditors</name>
+    <price>50</price>
+    <type>football boot</type>
+    <colour>red</colour>
+    <gender id = "m">male</gender>
+    <minSize>7</minSize>
+    <maxSize>12</maxSize>
   </shoe>
+  
   <shoe>
     <brand>Puma</brand>
     <name>Puma Kings</name>
@@ -61,6 +98,7 @@
     <minSize>7</minSize>
     <maxSize>12</maxSize>
   </shoe>
+  
   <shoe>
     <brand>New balance</brand>
     <name>420</name>
@@ -70,7 +108,16 @@
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
+    
+    <name>373 Women's</name>
+    <price>70</price>
+    <type>trainers</type>
+    <colour>grey</colour>
+    <gender id = "f">female</gender>
+    <minSize>4</minSize>
+    <maxSize>10</maxSize>
   </shoe>
+  
   <shoe>
     <brand>H by Hudson</brand>
     <name>black mint brogues </name>
@@ -81,16 +128,7 @@
     <minSize>7</minSize>
     <maxSize>12</maxSize>
   </shoe>
-  <shoe>
-    <brand>Adidas</brand>
-    <name>superstars</name>
-    <price>99</price>
-    <type>trainer</type>
-    <colour>white</colour>
-    <gender id = "f">female</gender>
-    <minSize>4</minSize>
-    <maxSize>10</maxSize>
-  </shoe>
+
   <shoe>
     <brand>Converse</brand>
     <name>All Stars oxford</name>
@@ -110,9 +148,7 @@
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Reebok</brand>
+    
     <name>Crossfit Nano 6.0</name>
     <price>110</price>
     <type>trainers</type>
@@ -121,62 +157,13 @@
     <minSize>7</minSize>
     <maxSize>12</maxSize>
   </shoe>
+
   <shoe>
     <brand>Asics</brand>
     <name>GEL-Kayano Evo</name>
     <price>85</price>
     <type>trainers</type>
     <colour>green</colour>
-    <gender id = "m">male</gender>
-    <minSize>7</minSize>
-    <maxSize>12</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Nike</brand>
-    <name>Free Free TR 6 Spectrum Women's</name>
-    <price>110</price>
-    <type>trainers</type>
-    <colour>blue</colour>
-    <gender id = "f">female</gender>
-    <minSize>4</minSize>
-    <maxSize>10</maxSize>
-  </shoe>
-  <shoe>
-    <brand>New Balance</brand>
-    <name>373 Women's</name>
-    <price>70</price>
-    <type>trainers</type>
-    <colour>grey</colour>
-    <gender id = "f">female</gender>
-    <minSize>4</minSize>
-    <maxSize>10</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Nike</brand>
-    <name>Floodlight Mercurial Victory VI FG</name>
-    <price>75</price>
-    <type>football boot</type>
-    <colour>purple</colour>
-    <gender id = "m">male</gender>
-    <minSize>7</minSize>
-    <maxSize>12</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Adidas</brand>
-    <name>preditors</name>
-    <price>50</price>
-    <type>football boot</type>
-    <colour>red</colour>
-    <gender id = "m">male</gender>
-    <minSize>7</minSize>
-    <maxSize>12</maxSize>
-  </shoe>
-  <shoe>
-    <brand>Nike</brand>
-    <name>Hypervenoms Phantoms</name>
-    <price>80</price>
-    <type>football boot</type>
-    <colour>red</colour>
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
