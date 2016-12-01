@@ -21,7 +21,10 @@
             background-color:black;
             height:850px;
             width:1700px;
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px #888888;
             }
+
             #leftCol
             {
             float:left;
