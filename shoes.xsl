@@ -10,24 +10,31 @@
             body 
             {
             margin: 0 auto;
-            background-color:#ccff00;
+            background-color:black;
             height:900px;
             width:1800px;
+            }
+            h1
+            {
+            margin: 0 auto;
+            text-align:center;
+            color:red;
+            font-size:50px;
+            text-shadow:2px 2px yellow;
             }
             #wrapper
             {
             margin: 0 auto;
-            margin-top:50px;
             background-color:black;
             height:850px;
             width:1700px;
-            border-radius: 25px;
-            box-shadow: 10px 10px 5px #888888;
+            background: linear-gradient(to bottom right, #262626, #bfbfbf, orange, red, pink); /* Standard syntax */
             }
-
             #leftCol
             {
             float:left;
+            width:200px;
+            height:850px;
             }
             h2
             {
@@ -41,9 +48,18 @@
             text-align:center;
             color:white;
             }
+            td
+            {
+            float:right;
+            }
+            td
+            {
+            float:right;
+            }
           </style>
         </head>
         <body>
+          <h1>KDR</h1>
           <div id = "wrapper">
             <div id = "leftCol">
               <h2>All Shoes:</h2>
@@ -51,8 +67,13 @@
                 <xsl:for-each select="/store/shoe">
                   <li><xsl:value-of select="brand"/></li>
                 </xsl:for-each>          
-              </ul>
+              </ul>           
             </div>
+              <td>
+                <xsl:for-each select="/store/shoe">
+                  <img width="100" height="100" src="{image}"/><br/>
+                </xsl:for-each>
+              </td>
           </div>
         </body>
       </html>
