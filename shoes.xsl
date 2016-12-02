@@ -9,10 +9,7 @@
           <style type="text/css">
             body 
             {
-            margin: 0 auto;
             background-color:black;
-            height:900px;
-            width:1800px;
             }
             h1
             {
@@ -25,16 +22,17 @@
             #wrapper
             {
             margin: 0 auto;
+            margin-bottom:100px;
             background-color:black;
-            height:850px;
-            width:1700px;
+            height:5000px;
+            width:1150px;
             background: linear-gradient(to bottom right, #262626, #bfbfbf, orange, red, pink); /* Standard syntax */
             }
             #leftCol
             {
             float:left;
             width:200px;
-            height:850px;
+            height:4000px;
             }
             h2
             {
@@ -48,13 +46,16 @@
             text-align:center;
             color:white;
             }
-            td
+            #bname
             {
             float:right;
+            width:900px;
+            height:100px;
             }
-            td
+            .brand
             {
-            float:right;
+            color:black;
+            text-decoration:underline;
             }
           </style>
         </head>
@@ -65,15 +66,18 @@
               <h2>All Shoes:</h2>
               <ul>
                 <xsl:for-each select="/store/shoe">
-                  <li><xsl:value-of select="brand"/></li>
-                </xsl:for-each>          
-              </ul>           
+                  <li><a href="#{generate-id(brand)}">
+                     <xsl:value-of select="brand"/></a></li>
+                </xsl:for-each> 
+              </ul>
             </div>
-              <td>
                 <xsl:for-each select="/store/shoe">
-                  <img width="100" height="100" src="{image}"/><br/>
+                  <div id="bname">
+                    <h2 class="brand"><a brand="{generate-id(brand)}">
+                    <xsl:value-of select="brand"/></a></h2>
+                  </div>
+                  <img style="float:right" width="170" height="150" src="{image}" border="2" border-color="black"/>
                 </xsl:for-each>
-              </td>
           </div>
         </body>
       </html>
