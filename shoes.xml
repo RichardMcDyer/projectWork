@@ -10,8 +10,9 @@
       <gender id="m">male</gender>
       <minSize>7</minSize>
       <maxSize>12</maxSize>
-      <image>/ProjectWork/shoe_images/NIKE-AIR-MAX-2017-3.jpg</image>
-      
+      <image id="air">/project/shoe_images/NIKE-AIR-MAX-2017-3.jpg</image>
+  </shoe>
+  <shoe>
       <name>Nike Air presto </name>
       <price>110</price>
       <type>trainer</type>
@@ -19,8 +20,9 @@
       <gender id="m">male</gender>
       <minSize>7</minSize>
       <maxSize>12</maxSize>
-      <image>/ProjectWork/shoe_images/nike-air-presto.jpg</image>
-    
+      <image id="presto">/project/shoe_images/nike-air-presto.jpg</image>
+  </shoe>
+  <shoe>
       <name>nike hurarache</name>
       <price>90</price>
       <type>trainer</type>
@@ -28,8 +30,9 @@
       <gender id="f">female</gender>
       <minSize>4</minSize>
       <maxSize>10</maxSize>
-      <image>/ProjectWork/shoe_images/air-hurarache-womens-shoe.jpg</image>
-    
+      <image id="hurarache">/project/shoe_images/air-hurarache-womens-shoe.jpg</image>
+  </shoe>
+  <shoe>
       <name>Free Free TR 6 Spectrum Women's</name>
       <price>110</price>
       <type>trainers</type>
@@ -37,8 +40,9 @@
       <gender id = "f">female</gender>
       <minSize>4</minSize>
       <maxSize>10</maxSize>
-      <image>/ProjectWork/shoe_images/nike-free-free.jpg</image>
-    
+      <image id="free">/project/shoe_images/nike-free-free.jpg</image>
+  </shoe>
+  <shoe>
       <name>Floodlight Mercurial Victory VI FG</name>
       <price>75</price>
       <type>football boot</type>
@@ -46,9 +50,9 @@
       <gender id = "m">male</gender>
       <minSize>7</minSize>
       <maxSize>12</maxSize>
-      <image>/ProjectWork/shoe_images/nike-floodlight.jpg</image>
-    
-      <brand>Nike</brand>
+      <image id="mercurial">/project/shoe_images/nike-floodlight.jpg</image>
+  </shoe>
+  <shoe>
       <name>Hypervenoms Phantoms</name>
       <price>80</price>
       <type>football boot</type>
@@ -56,7 +60,7 @@
       <gender id = "m">male</gender>
       <minSize>7</minSize>
       <maxSize>12</maxSize>
-      <image>/ProjectWork/shoe_images/Nike-Hypervenom-Phantom-2.jpg</image>
+      <image id="hypervenoms">/project/shoe_images/Nike-Hypervenom-Phantom-2.jpg</image>
   </shoe>
   
   <shoe>
@@ -68,8 +72,9 @@
     <gender id="m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/Adidas-Yezzy-Boost-350.jpg</image>
-    
+    <image id="yezzy">/project/shoe_images/Adidas-Yezzy-Boost-350.jpg</image>
+  </shoe>
+  <shoe>
     <name>adidas Gazelle</name>
     <price>70</price>
     <type>casual</type>
@@ -77,8 +82,9 @@
     <gender id="m"></gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/adidas-gazelle.jpg</image>
-    
+    <image id="gazelle">/project/shoe_images/adidas-gazelle.jpg</image>
+  </shoe>
+  <shoe>
     <name>superstars</name>
     <price>99</price>
     <type>trainer</type>
@@ -86,16 +92,17 @@
     <gender id = "f">female</gender>
     <minSize>4</minSize>
     <maxSize>10</maxSize>
-    <image>/ProjectWork/shoe_images/adidas-superstar.jpg</image>
-    
-    <name>preditors</name>
+    <image id="superstars">/project/shoe_images/adidas-superstar.jpg</image>
+  </shoe>
+  <shoe>
+    <name>predators</name>
     <price>50</price>
     <type>football boot</type>
     <colour>red</colour>
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/adidas-predator.jpg</image>
+    <image id="predator">/project/shoe_images/adidas-predator.jpg</image>
   </shoe>
   
   <shoe>
@@ -107,7 +114,7 @@
     <gender id ="m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/puma-king.jpg</image>
+    <image id="puma">/project/shoe_images/puma-king.jpg</image>
   </shoe>
   
   <shoe>
@@ -119,8 +126,9 @@
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/new-balance-420.jpg</image>
-    
+    <image id="420">/project/shoe_images/new-balance-420.jpg</image>
+  </shoe>
+  <shoe>
     <name>373 Women's</name>
     <price>70</price>
     <type>trainers</type>
@@ -128,7 +136,7 @@
     <gender id = "f">female</gender>
     <minSize>4</minSize>
     <maxSize>10</maxSize>
-    <image>/ProjectWork/shoe_images/new-balance-373.jpg</image>
+    <image id="375">/project/shoe_images/new-balance-373.jpg</image>
   </shoe>
   
   <shoe>
@@ -140,7 +148,7 @@
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/hByHudson.jpg</image>
+    <image id="brogues">/project/shoe_images/hByHudson.jpg</image>
   </shoe>
 
   <shoe>
@@ -152,7 +160,7 @@
     <gender id = "f">female</gender>
     <minSize>4</minSize>
     <maxSize>10</maxSize>
-    <image>/ProjectWork/shoe_images/converse-allstar.jpg</image>
+    <image id="converse">/project/shoe_images/converse-allstar.jpg</image>
   </shoe>
   <shoe>
     <brand>Reebok</brand>
@@ -163,8 +171,9 @@
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/reebok-classic-nylon.jpg</image>
-    
+    <image id="reebok">/project/shoe_images/reebok-classic-nylon.jpg</image>
+  </shoe>
+  <shoe>
     <name>Crossfit Nano 6.0</name>
     <price>110</price>
     <type>trainers</type>
@@ -172,8 +181,21 @@
     <gender id = "m">male</gender>
     <minSize>7</minSize>
     <maxSize>12</maxSize>
-    <image>/ProjectWork/shoe_images/reebok-crossfit.jpg</image>
+    <image id="crossfit">/project/shoe_images/reebok-crossfit.jpg</image>
   </shoe>
+
+  <shoe>
+    <brand>Asics</brand>
+    <name>GEL-Kayano Evo</name>
+    <price>85</price>
+    <type>trainers</type>
+    <colour>green</colour>
+    <gender id = "m">male</gender>
+    <minSize>7</minSize>
+    <maxSize>12</maxSize>
+    <image id="asics">/project/shoe_images/asics-gel-kayano.jpg</image>
+  </shoe>
+</store>
 
   <shoe>
     <brand>Asics</brand>
