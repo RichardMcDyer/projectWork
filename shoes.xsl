@@ -58,6 +58,18 @@
             text-decoration:underline;
             }
           </style>
+          <script>
+          
+          
+          
+          
+          
+          <!--insert ajax here dav -->
+          
+          
+          
+          
+          </script>
         </head>
         <body>
           <h1>KDR</h1>
@@ -78,6 +90,7 @@
                   </div>
                   <img style="float:right" width="170" height="150" src="{image}" border="2" border-color="black"/>
                 </xsl:for-each>
+                
           </div>
         </body>
       </html>
