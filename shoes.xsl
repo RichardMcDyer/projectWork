@@ -27,6 +27,8 @@
             height:5000px;
             width:1150px;
             background: linear-gradient(to bottom right, #262626, #bfbfbf, orange, red, pink); /* Standard syntax */
+             border-radius: 25px;
+             box-shadow: 10px 10px 5px #888888;
             }
             #leftCol
             {
@@ -58,24 +60,65 @@
             text-decoration:underline;
             }
           </style>
-          <script>
-          
-          
-          
-          
-          
-          <!--insert ajax here dav -->
-          
-          
-          
-          
-          </script>
+       <!-- Ajax************
+        <script type="text/javascript">
+        var XMLHttpRequestObject = false;
+
+        if (window.XMLHttpRequest) {
+            XMLHttpRequestObject = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            XMLHttpRequestObject =
+              new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        function getData(datasource, divID) {
+            if (XMLHttpRequestObject) {
+                //var obj = document.getElementById(divID);
+                XMLHttpRequestObject.open("GET", datasource);
+                XMLHttpRequestObject.onreadystatechange = function () {
+                    if (XMLHttpRequestObject.readyState == 4 
+                     && XMLHttpRequestObject.status == 200) {
+                      var body = document.getElementsByTagName('body');
+                      //remove if exists
+                      if (document.getElementById(divID)){
+                        body[0].removeChild(document.getElementById(divID));
+                      }
+                      var ajaxDesc = document.createElement('div');
+                      ajaxDesc.id = divID;
+                      ajaxDesc.innerHTML = XMLHttpRequestObject.responseText;
+                      body[0].appendChild(ajaxDesc);
+                      /*  obj.innerHTML = 
+                        XMLHttpRequestObject.responseText;*/
+                    }
+                }
+                XMLHttpRequestObject.send(null);
+            }
+        }
+    </script> -->
         </head>
         <body>
           <h1>KDR</h1>
           <div id = "wrapper">
+           <!-- Ajax form ***********
+            <form>
+             <input type="button" value="Display Message" onclick = "getData('testdata.txt', 'targetDiv')">
+            </form>
+            <div id="targetDiv">
+             <p> Here's the data </p>
+            </div>
+             <p>
+               <table>
+                  <tr>
+                   <td><img src="AjaxAmsterdam.jpg" onmouseover="getData('AjaxAmsterdam.txt','ajaxDesc')"/></td>
+                   <td><img src="AjaxBleach.jpg" onmouseover="getData('AjaxBleach.txt','ajaxDesc')"/></td>
+                    <td><img src="AjaxGreek.jpg" onmouseover="getData('AjaxGreek.txt','ajaxDesc')"/></td>
+                    <td><img src="AjaxSchematic.jpg" onmouseover="getData('AjaxSchematic.txt','ajaxDesc')"/></td>
+                 </tr>
+              </table>
+               <div id="ajaxDesc"> </div>
+                </p>-->
+
             <div id = "leftCol">
-              <h2>All Shoes:</h2>
+             <h2>All Shoes:</h2>
               <ul>
                 <xsl:for-each select="/store/shoe">
                   <li><a href="#{generate-id(brand)}">
