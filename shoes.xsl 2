@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="html" doctype-public="XSLT-compat" omit-xml-declaration="yes" encoding="UTF-8" indent="yes" />
+  
+    <xsl:template match="/">
+      <html>
+        <head>
+          <title>Shoe Page</title>
+          <style type="text/css">
+            body 
+            {
+            background-color:black;
+            }
+            h1
+            {
+            margin: 0 auto;
+            text-align:center;
+            color:red;
+            font-size:50px;
+            text-shadow:2px 2px yellow;
+            }
+            #wrapper
+            {
+            margin: 0 auto;
+            margin-bottom:100px;
+            background-color:black;
+            height:4000px;
+            width:1150px;
+            background: linear-gradient(to bottom right, #262626, #bfbfbf, orange, red, pink); /* Standard syntax */
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px #888888;
+            }
+            #leftCol
+            {
+            float:left;
+            width:200px;
+            height:5000px;
+            }
+            h2
+            {
+            margin-left:40px;
+            text-align:center;
+            color:white;
+            }
+            ul
+            {
+            list-style:none;
+            text-align:center;
+            color:white;
+            }
+            #name
+            {
+            color:black;
+            text-decoration:underline;
+            }
+            #nike
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            }
+            #adidas
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:360px;
+            }
+            #puma
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:365px;
+            }
+            #nb
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:370px;
+            }
+            #h
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:375px;
+            }
+            #converse
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:380px;
+            }
+            #reebok
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:385px;
+            }
+            #asics
+            {
+            float:right;
+            width:900px;
+            height:100px;
+            margin-top:390px;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>KDR</h1>
+          <div id = "wrapper">
+            <div id = "leftCol">
+              <h2>All Shoes:</h2>
+              <ul>
+                <xsl:for-each select="/store/shoe">
+                  <li><!--<a href="#{generate-id(brand)}"> -->
+                     <xsl:value-of select="brand"/><!--</a>--></li>
+                </xsl:for-each> 
+              </ul>
+          </div>
+              <!--  <xsl:for-each select="/store/shoe">
+                  <div id="bname">
+                    <h2 class="brand"><a brand="{generate-id(brand)}">
+                    <xsl:value-of select="brand"/></a></h2>
+                  </div>
+                  <img style="float:left margin-left:50px" width="200" height="150" src="{image}" border="2" border-color="black"/>                
+                </xsl:for-each> -->
+            <div id="nike">
+              <h2 id="name">Nike</h2>
+              <img src="/project/shoe_images/NIKE-AIR-MAX-2017-3.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/nike-air-presto.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/air-huarache-womens-shoe.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/nike-free-free.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/nike-floodlight.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/Nike-Hypervenom-Phantom-2.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="adidas">
+              <h2 id="name">Adidas</h2>
+              <img src="/project/shoe_images/Adidas-Yezzy-Boost-350.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/adidas-gazelle.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/adidas-superstar.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/adidas-predator.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="puma">
+              <h2 id="name">Puma</h2>
+              <img src="/project/shoe_images/puma-king.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="nb">
+              <h2 id="name">New Balance</h2>
+              <img src="/project/shoe_images/new-balance-420.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/new-balance-373.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="h">
+              <h2 id="name">H By Hudgson</h2>
+              <img src="/project/shoe_images/hByHudson.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="converse">
+              <h2 id="name"><a brand="{generate-id(brand)}">Converse</a></h2>
+              <img src="/project/shoe_images/converse-allstar.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="reebok">
+              <h2 id="name">Reebok</h2>
+              <img src="/project/shoe_images/reebok-classic-nylon.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+              <img src="/project/shoe_images/reebok-crossfit (2).jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="asics">
+              <h2 id="name">Asics</h2>
+              <img src="/project/shoe_images/asics-gel-kayano.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+          </div>
+        </body>
+      </html>
+    </xsl:template>
+</xsl:transform>
