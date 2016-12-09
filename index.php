@@ -3,22 +3,22 @@
 *Using SimpleXML to update xml data
 */
 //prevent from redirect
-if(isset($_SERVER['HTTP_REFERER'])){
+ if(isset($_SERVER['HTTP_REFERER'])){
   header("Location: ".$_SERVER['HTTP_REFERER']);
 }
 else{
-  echo "Error";
+  echo "Error"; 
 }
 //store form data in variables
 $brand = $_POST["brand"];
-$name = $_POST["name"]
+$name = $_POST["name"];
 $price = $_POST["price"];
 $type = $_POST["type"];
 $colour = $_POST["colour"];
 $gender = $_POST["gender"];
-$minSize = $_POST["smallest size"];
-$maxSize = $_POST["largest size"];
-$image = $_POST["image"]
+$minSize = $_POST["minSize"];
+$maxSize = $_POST["maxSize"];
+
 
 //check if xml file exists
 if(file_exists('shoes.xml')){
@@ -34,12 +34,11 @@ if(file_exists('shoes.xml')){
   $newChild->addChild('gender',$gender);
   $newChild->addChild('minSize',$minSize);
   $newChild->addChild('maxSize',$maxSize);
-  $newChild->addChild('image',$image);
 }
 //if file doesnt exist
 else{
   exit('Failed to open shoes.xml');//error message
 }
 //save new data from variable back into an xml file
-file_put_contents('/home/cabox/workspace/project/shoes.xml',$xml->asXML());
+file_put_contents('/home/cabox/workspace/project/shoes.xml',$xml->asXML()); 
 ?>
