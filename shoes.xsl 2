@@ -24,7 +24,7 @@
             margin: 0 auto;
             margin-bottom:100px;
             background-color:black;
-            height:4000px;
+            height:4200px;
             width:1150px;
             background: linear-gradient(to bottom right, #262626, #bfbfbf, orange, red, pink); /* Standard syntax */
             border-radius: 25px;
@@ -108,6 +108,23 @@
             height:100px;
             margin-top:390px;
             }
+            #form
+            {
+            float:right;
+            width:900px;
+            height:200px;
+            margin-top:500;
+            }
+            #add
+            {
+            margin-top:300px;
+            font-size:28px;
+            }
+            #submit
+            {
+            width:10em;
+            height:2em;
+            }
           </style>
         </head>
         <body>
@@ -117,8 +134,7 @@
               <h2>All Shoes:</h2>
               <ul>
                 <xsl:for-each select="/store/shoe">
-                  <li><!--<a href="#{generate-id(brand)}"> -->
-                     <xsl:value-of select="brand"/><!--</a>--></li>
+                  <li><xsl:value-of select="brand"/></li>
                 </xsl:for-each> 
               </ul>
           </div>
@@ -159,7 +175,7 @@
               <img src="/project/shoe_images/hByHudson.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
             </div>
             <div id="converse">
-              <h2 id="name"><a brand="{generate-id(brand)}">Converse</a></h2>
+              <h2 id="name">Converse</h2>
               <img src="/project/shoe_images/converse-allstar.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
             </div>
             <div id="reebok">
@@ -170,6 +186,19 @@
             <div id="asics">
               <h2 id="name">Asics</h2>
               <img src="/project/shoe_images/asics-gel-kayano.jpg" height="150" width="200" style="float:left" border="2" border-color="black"/>
+            </div>
+            <div id="form">
+              <form id="add" action="index.php" method="Post">
+                Brand: <input type = "text" name = "brand"/><br/>
+                Name: <input type = "text" name = "name"/><br/>
+                Price: <input type = "text" name = "price"/><br/>
+                Type: <input type = "text" name = "type"/><br/>
+                Colour: <input type = "text" name = "colour"/><br/>
+                Gender: <input type = "text" name = "gender"/><br/>
+                MinSize: <input type = "text" name = "minSize"/><br/>
+                MaxSize: <input type = "text" name = "maxSize"/><br/>
+                <input id = "submit" type = "submit" value = "add"/> 
+              </form>
             </div>
           </div>
         </body>
